@@ -5,6 +5,7 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
+    "bootstrap": "^5.0.2",
     "bootstrap5": "^1.1.9",
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0"

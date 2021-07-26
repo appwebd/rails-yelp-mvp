@@ -1,0 +1,28 @@
+<div class="container">
+  <article>
+    <h1>
+      <%= @restaurant.name %>
+
+      <small>
+        <%= link_to "#{@restaurant.id}/edit", :method => :get, :title => "Update  #{@restaurant.name}" do %>
+          <i class="fas fa-pencil-alt"></i>
+        <% end %>
+      </small>
+      <small>
+
+        <%= link_to @restaurant, :method => :delete, :title => "Delete #{@restaurant.name}", data: { :confirm => "You sure?", disable_with: "Processing ..." } do %>
+          <i class="fas fa-trash"></i>
+        <% end %>
+
+      </small>
+    </h1>
+    <hr>
+    <p> <%= @restaurant.address %>      </p>
+    <p> <%= @restaurant.phone_number %> </p>
+    <p> <%= @restaurant.category %>     </p>
+
+  </article>
+  <hr>
+  <br><br>
+  <%= link_to 'Back to list', '/restaurants' %>
+</div>

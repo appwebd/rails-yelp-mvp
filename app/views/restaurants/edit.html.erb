@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Edit an existing restaurant</h1>
+
+  <%= form_for(@restaurant) do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: 'form-control' %><br>
+
+    <%= f.label :Address %><br>
+    <%= f.text_field :address, class: 'form-control' %><br>
+
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number, class: 'form-control' %><br>
+
+    <%= f.label :category %><br>
+    <%= f.text_field :category, class: 'form-control' %><br>
+
+
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+  <hr>
+  <br><br>
+  <%= link_to 'Back to list', '/restaurants' %>
+</div>
